@@ -218,7 +218,7 @@ colors = ["#ff69b4", "#7fffd4", "#ffd700", "#98fb98", "#87cefa"]
 for _ in range(8):
     color = random.choice(colors)
     left = random.randint(0, 90)
-    duration = random.randint(8, 15)
+    duration = random.randint(5, 15)
     balloons += f"""
     <div class="balloon" style="
         left: {left}%;
@@ -229,17 +229,18 @@ for _ in range(8):
 # 公开课信息HTML
 info_html = """
 <div class="info-container">
-    <div class="info-item">🗓 <strong>时间</strong>: 2025年04月23日 14:15-14:50</div>
+    <div class="info-item">🗓 <strong>时间</strong>: 14:15-14:55</div>
     <div class="info-item">📍 <strong>地点</strong>: 四楼Y12-2</div>
-    <div class="info-item">👨‍🏫 <strong>讲师</strong>: 张鸣晨</div>
-    <div class="info-item">🎯 <strong>主题</strong>: Python入门——初始两种变量</div>
+    <div class="info-item">👨‍🏫 <strong>老师</strong>: 计算机组——张鸣晨</div>
+    <div class="info-item">🎯 <strong>主题</strong>: Python入门——初识两种变量</div>
 </div>
 """
 
 # 组合HTML内容
 htmls = f"""
 {css}
-<div class="title">诚邀您参加公开课</div>
+<div class="title">诚邀您来听公开课</div>
+<div class="title">Sincere Invitation</div>
 {info_html}
 <div class="scene-container">
     <div class="computer"></div>
