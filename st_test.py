@@ -78,14 +78,14 @@ css = """
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap');
 
 body {
-    background: #f9d8e0;
+    background: #bcd2ee;
     overflow-x: hidden;
     font-family: 'Noto Sans SC', sans-serif;
 }
 
 /* 标题样式 */
 .title {
-    color: #ff69b4;
+    color: #cd3700;
     text-align: center;
     font-size: 2.2rem;
     font-weight: 700;
@@ -148,7 +148,7 @@ body {
 
 /* 图标样式 */
 .info-item strong {
-    color: #ff69b4;
+    color: #B22222;
 }
 
 /* 场景容器 */
@@ -229,7 +229,7 @@ for _ in range(8):
 # 公开课信息HTML
 info_html = """
 <div class="info-container">
-    <div class="info-item">🗓 <strong>时间</strong>: 14:15-14:55</div>
+    <div class="info-item">🗓 <strong>时间</strong>: 2025-04-23 (周三) 14:15-14:55</div>
     <div class="info-item">📍 <strong>地点</strong>: 四楼Y12-2</div>
     <div class="info-item">👨‍🏫 <strong>老师</strong>: 计算机组——张鸣晨</div>
     <div class="info-item">🎯 <strong>主题</strong>: Python入门——初识两种变量</div>
@@ -249,6 +249,5 @@ htmls = f"""
 {balloons}
 {balloon_js}
 """
-
 # 渲染页面
 html(htmls, height=800)
